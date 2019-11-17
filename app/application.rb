@@ -4,7 +4,8 @@ class Application
   end
 
   def hour_response
-    (Time.now.to_i % 2).zero? ?  ["<em>Hello</em>"] : ["<strong>Hello</strong>"]
+    time = Time.new
+    (Time.now.hour.to_i >= 12).zero? ?  ["<em>Hello</em>"] : ["<strong>Hello</strong>"]
   end
 
 end
