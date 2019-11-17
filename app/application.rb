@@ -4,7 +4,7 @@ class Application
   end
 
   def hour_response
-    time = Time.new
+    #
     (Time.now.hour.to_i >= 12).zero? ?  ["Good Afternoon!"] : ["Good Morning!"]
   end
 
